@@ -3,6 +3,7 @@
 # "One True Brace Style"
 --style=1tbs
 
+
 # Attach brackets to class and struct inline function definitions.
 --attach-inlines
 
