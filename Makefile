@@ -753,7 +753,7 @@ ifdef LTO
   endif
 endif
 
-all: version $(CHECKS) $(TARGET) $(L10N) $(TESTS)
+all: version $(CHECKS) $(TARGET) $(L10N) $(TESTS) validate-pr
 	@
 
 $(TARGET): $(ODIR) $(OBJS)
@@ -917,7 +917,6 @@ data/osx/AppIcon.icns: data/osx/AppIcon.iconset
 ifdef OSXCROSS
 app: appclean version $(APPTARGET)
 else
-app: appclean version data/osx/AppIcon.icns $(APPTARGET)
 endif
 	mkdir -p $(APPTARGETDIR)/Contents
 	cp data/osx/Info.plist $(APPTARGETDIR)/Contents/
@@ -1064,8 +1063,11 @@ check: version $(BUILD_PREFIX)cataclysm.a
 
 clean-tests:
 	$(MAKE) -C tests clean
+    
+validate-pr:
+    @build-scripts/validate_pr_in_jenkins
 
-.PHONY: tests check ctags etags clean-tests install lint
+.PHONY: tests check ctags etags clean-tests install lint validate-pr
 
 -include $(SOURCES:$(SRC_DIR)/%.cpp=$(DEPDIR)/%.P)
 -include ${OBJS:.o=.d}
