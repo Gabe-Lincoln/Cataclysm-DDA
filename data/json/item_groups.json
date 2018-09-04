@@ -873,6 +873,7 @@
       ["hat_sombrero", 3],
       ["backpack", 38],
       ["backpack_leather", 18],
+      ["backpack_giant", 1],
       ["purse", 40],
       ["mbag", 20],
       ["slingpack", 15],
@@ -2356,6 +2357,7 @@
       ["vest", 15],
       ["backpack", 38],
       ["backpack_leather", 18],
+      ["backpack_giant", 1]
       ["slingpack", 18],
       ["bb", 8],
       ["bolt_steel", 7],
@@ -2844,6 +2846,7 @@
       ["slingpack", 8],
       ["rucksack", 20],
       ["backpack_leather", 8],
+      ["backpack_giant", 1],
       ["briefcase", 10]
     ]
   },{
@@ -8251,6 +8254,7 @@
       ["crispycran", 32],
       ["colamdew", 32],
       ["backpack", 20],
+      ["backpack_giant", 1],
       ["hairpin", 10],
       ["fc_hairpin", 4],
       ["wristwatch", 15],
@@ -8841,6 +8845,7 @@
       ["glock_19", 5],
       ["backpack", 100],
       ["backpack_leather", 50],
+      ["backpack_giant", 1],
       ["lighter", 100],
       ["ref_lighter", 20],
       ["matches", 50],
